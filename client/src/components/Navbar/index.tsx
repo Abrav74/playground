@@ -21,12 +21,13 @@ const Navbar = () => {
         }}
       >
         <Typography
-          fontWeight="bold"
+          fontWeight="500"
           fontSize="16px"
           color="#3F3F3F"
           sx={{
             "&:hover": {
               cursor: "pointer",
+              color: "#238D95",
             },
           }}
         >
@@ -38,7 +39,19 @@ const Navbar = () => {
           border: "2px solid black",
         }}
       >
-        Support Channels
+        <Typography
+          fontWeight="500"
+          fontSize="16px"
+          color="#3F3F3F"
+          sx={{
+            "&:hover": {
+              cursor: "pointer",
+              color: "#238D95",
+            },
+          }}
+        >
+          Support Channels
+        </Typography>
       </Box>
       <Box
         display="flex"
@@ -53,7 +66,7 @@ const Navbar = () => {
         sx={{
           border: "2px solid black",
         }}
-        pr={2}
+        mr={2}
       >
         <QueryStats />
       </Box>

@@ -6,9 +6,24 @@ function App() {
   return (
     <>
       <div className="app">
-        <Box bgcolor="#FFFFFF" width="100%">
+        <Box
+          bgcolor="#FFFFFF"
+          width="100%"
+          height="100vh"
+          display="flex"
+          flexDirection="column"
+          overflow="hidden"
+        >
           <Navbar />
-          <Box width="100%" height="100%"></Box>
+
+          <Box
+            width="100%"
+            flexGrow={1}
+            sx={{
+              border: "2px solid black",
+              overflow: "auto",
+            }}
+          ></Box>
         </Box>
       </div>
     </>
